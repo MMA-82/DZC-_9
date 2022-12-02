@@ -3,12 +3,12 @@ int N = int.Parse(Console.ReadLine() ?? "0");
 Console.Write("Введите число M: ");
 int M = int.Parse(Console.ReadLine() ?? "0");
 
-void PrintNumbers(int N)
+void PrintNumbers(int n)
 {
-    if (N >= M)
+    if (n >= M)
     {
-    PrintNumbers(N - 1);
-    Console.Write($"{N} ");
+    PrintNumbers(n - 1);
+    Console.Write($"{n} ");
     }
 }
 PrintNumbers(N);
